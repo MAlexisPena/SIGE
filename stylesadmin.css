@@ -1,0 +1,254 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el sidebar */
+.sidebar {
+    position: fixed; /* Fija el sidebar en la parte izquierda */
+    top: 0; /* Asegura que esté en la parte superior */
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #070716;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 0px;
+}
+
+nav ul li a {
+    width: 280px;
+    text-decoration: none;
+    background-color: #070716;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+nav ul li.active a {
+    background-color: #ffffff; /* Color de fondo para la opción activa */
+    color: #070716; /* Color del texto para la opción activa */       
+}
+
+nav ul li.active a .icon {
+    filter: brightness(1) invert(1); /* Cambia el color del icono de la opción activa */    
+}
+
+/* Evitar que la opción activa cambie de color al pasar el mouse */
+nav ul li.active a:hover {
+    background-color: #ffffff; /* Mantén el color de fondo de la opción activa */
+    color: #070716; /* Mantén el color del texto de la opción activa */
+    cursor: default; /* Cambia el cursor para indicar que no es interactivo */
+}
+
+nav ul li a:hover {
+    background-color: #d7f337; /* Color de fondo al pasar el mouse */
+    color: #070716; /* Color del texto al pasar el mouse */
+}
+
+nav ul li a:hover .icon {
+    filter: brightness(1) invert(1); /* Cambia el color del icono al pasar el mouse */
+}
+
+/* Estilo para el encabezado */
+.header {
+    position: fixed;
+    top: 0;
+    left: 300px; /* Ajusta según el ancho del sidebar */
+    right: 0;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+/* Estilo para el ícono del menú */
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon img.rotate {
+    transform: rotate(90deg); /* Rotación del ícono al abrir el menú */
+}
+
+.user-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #070716;
+    margin: 0;
+}
+
+/* Estilo para la animación del menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #070716;
+    display: block;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el rectángulo de la opción seleccionada */
+.selected-option {
+    position: absolute;
+    top: 80px; /* Debajo del encabezado */
+    left: 300px; /* Alineado a la izquierda */
+    background-color: #d7f337; /* Color de fondo */
+    color: #070716;
+    padding: 10px 20px;
+    border-top-right-radius: 50px; /* Esquinas superiores redondeadas */
+    border-bottom-right-radius: 50px; /* Esquinas inferiores redondeadas */
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Estilo para el contenedor principal */
+.main-content {
+    margin-left: 300px; /* Igual al ancho del sidebar */
+    margin-top: 150px; /* Asegura que no se superponga con el encabezado */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: #D4E4E1;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para el ícono de la tarjeta */
+.card-icon img {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilo para el número en la tarjeta */
+.card-number {
+    background-color: #ffffff;
+    color: #070716;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #070716;
+}
+
+/* Estilo para el botón de la tarjeta */
+.card-button {
+    background-color: #d7f337;
+    color: #070716;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #c4e02e;
+}

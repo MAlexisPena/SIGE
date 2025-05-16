@@ -1,0 +1,209 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 300px; /* Ajusta según el ancho del sidebar */
+  right: 0;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon img.rotate {
+  transform: rotate(90deg); /* Rotación del ícono al abrir el menú */
+}
+
+.user-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #070716;
+  margin: 0;
+}
+
+/* Estilo para la animación del menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #070716;
+    display: block;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el sidebar */
+.sidebar {
+    position: fixed; /* Fija el sidebar en la parte izquierda */
+    top: 0; /* Asegura que esté en la parte superior */
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #BCCFCB;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #070716;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 0px;
+}
+
+nav ul li a {
+    width: 280px;
+    text-decoration: none;
+    background-color: #BCCFCB;
+    color: #070707;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+nav ul li.active a {
+    background-color: #D4E4E1; /* Color de fondo para la opción activa */
+    color: #070716; /* Color del texto para la opción activa */       
+}
+
+nav ul li.active a .icon {
+    filter: brightness(1) invert(1); /* Cambia el color del icono de la opción activa */    
+}
+/* Evitar que la opción activa cambie de color al pasar el mouse */
+nav ul li.active a:hover {
+    background-color: #D4E4E1; /* Mantén el color de fondo de la opción activa */
+    color: #070716; /* Mantén el color del texto de la opción activa */
+    cursor: default; /* Cambia el cursor para indicar que no es interactivo */
+}
+
+nav ul li a:hover {
+  background-color: #D4E4E1; /* Color de fondo al pasar el mouse */
+  color: #070716; /* Color del texto al pasar el mouse */
+}
+
+nav ul li a .icon {
+  filter: brightness(1) invert(1); /* Cambia el color del icono */ 
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px; /* Espacio debajo del header */
+    margin-left: 320px; /* Espacio para no tocar el sidebar */
+    margin-right: 20px; /* Espacio a la derecha */
+    gap: 20px;
+}
+
+/* Estilo para el rectángulo de la opción seleccionada */
+.selected-option {
+    background-color: #F5DCB2; /* Color de fondo */
+    color: #070716;
+    padding: 10px 24px;
+    border-top-right-radius: 50px; /* Esquinas superiores redondeadas */
+    border-bottom-right-radius: 50px; /* Esquinas inferiores redondeadas */
+    font-size: 18px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+    font-weight: bold;
+}
+
+.actionVolver img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Ajuste para el contenedor principal */
+.main-content {
+    /*margin-top: 80px; /* Espacio debajo del header */
+    margin-left: 320px; /* Espacio para no tocar el sidebar */
+    margin-right: 20px; /* Espacio a la derecha */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el área principal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}

@@ -1,0 +1,97 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  background: #fafbfc;
+}
+
+.perfil-grid {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+}
+
+.perfil-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 24px 28px 18px 28px;
+  min-width: 320px;
+  flex: 1;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perfil-card h3 {
+  color: #a67c2d;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.datos-personales h3, .resumen-academico h3 {
+  justify-content: flex-start;
+}
+
+.resumen-academico h3 {
+  color: #a67c2d;
+}
+
+.estado-verde {
+  color: #1ca14a;
+  font-weight: bold;
+}
+
+.alerta-sistema {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 18px 28px;
+  margin: 0 auto;
+}
+
+.alerta-sistema h3 {
+  color: #e6a100;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.recomendaciones h3 {
+  color: #a67c2d;
+}
+
+.observaciones h3 {
+  color: #a67c2d;
+}
+
+.recomendaciones ul {
+  margin: 0 0 0 18px;
+  padding: 0;
+  color: #222;
+  font-size: 16px;
+}
+
+.ver-observacion {
+  color: #1ca1f3;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.emoji {
+  font-size: 22px;
+  vertical-align: middle;
+}

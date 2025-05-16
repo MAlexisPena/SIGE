@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../cssEst/globalDesign.css" />
+    <link rel="stylesheet" href="../cssEst/stylePantallaCalificaciones.css">
+  </head>
+    <body>
+      <header class="header">
+      <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+        <img src="../../resources/img/menu.png" alt="Menu">
+      </div>
+      <h1>Panel Estudiantil</h1>
+      <div class="user-icon">
+        <img src="../../resources/img/circulo-de-usuarios.png" alt="Usuario">
+      </div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="../estPantallaMiPerfil.html">Mi Perfil</a></li>
+          <li><a href="../../global/html/index.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="subheader">
+      <div class="selected-option">
+      Calificaciones Matemáticas
+      </div>
+      <div class="actionVolver">
+        <a href="estPantallaMisMaterias.html">
+          <img src="../../resources/img/volver-flecha.png" alt="volver">
+        </a>
+      </div>
+    </div>
+    
+
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../../resources/img/logoIETN.png" alt="Logo">
+        <h2>I. E. Tecnico Nacionalizado</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../estPantallaPrincipal.html">
+              <img src="../../resources/img/iconAccesoRapidoWhite.png" alt="Inicio" class="icon">
+              Inicio
+            </a>
+          </li>
+          <li class="active">
+            <a>
+              <img src="../../resources/img/iconMateria.png" alt="Mis Materias" class="icon">
+              Mis Materias
+            </a>
+          </li>
+          <li>
+            <a href="../estPantallaMisBoletines.html">
+              <img src="../../resources/img/iconBoletines.png" alt="Mis Boletines" class="icon">
+              Mis Boletines
+            </a>
+          </li>
+          <li>
+            <a href="../estPantallaMiPerfil.html">
+              <img src="../../resources/img/perfil.png" alt="Mi Perfil" class="icon">
+              Mi Perfil
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <section class="periodo">
+        <h3>Periodo 1</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Actividad</th>
+              <th>Calificación</th>
+              <th>Observación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tarea 1</td>
+              <td>5.0</td>
+              <td>Excelente desempeño, ¡continúa así!</td>
+            </tr>
+            <tr>
+              <td>Quiz 1</td>
+              <td>4.8</td>
+              <td>Buen trabajo, ¡sigue así!</td>
+            </tr>
+            <tr>
+              <td>Tarea 2</td>
+              <td>4.9</td>
+              <td>Excelente trabajo, ¡casi perfecto!</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="promedio">Promedio Periodo 1: <span>4.9</span></p>
+      </section>
+
+      <section class="periodo">
+        <h3>Periodo 2</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Actividad</th>
+              <th>Calificación</th>
+              <th>Observación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Quiz 1</td>
+              <td>1.9</td>
+              <td><a href="estPantallaObservacionesMatematicas.html">Más Detalles</a></td>
+            </tr>
+            <tr>
+              <td>Tarea 1</td>
+              <td>4.0</td>
+              <td>Buen trabajo, sigue mejorando.</td>
+            </tr>
+            <tr>
+              <td>Examen 1</td>
+              <td>3.5</td>
+              <td>Necesitas mejorar en este examen.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="promedio">Promedio Periodo 2: <span>3.8</span></p>
+      </section>
+    </div>
+    <script src="../../scriptsadmin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGE/Administrador</title>
+    <link rel="stylesheet" href="css/stylesadmin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="resources/img/logoIETN.png" alt="Logo">
+            <h2>I. E. Tecnico Nacionalizado</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a>
+                        <img src="resources/img/iconAccesoRapidoWhite.png" alt="Acceso Rapido" class="icon">
+                        Acceso Rápido
+                    </a>
+                </li>
+                <li>
+                    <a href="adminGestionUsuario.html">
+                        <img src="resources/img/iconGestionUsuarioWhite.png" alt="Gestión de Usuarios" class="icon">
+                        Gestión de Usuarios
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/img/desarrollo-educativo(1).png" alt="Gestión Academica" class="icon">
+                        Gestión Academica
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/img/calificar-nota(1).png" alt="Generar Boletines" class="icon">
+                        Generar Boletines
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/img/productividad(1).png" alt="Desempeño Estudiantil" class="icon">
+                        Desempeño Estudiantil
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/img/horario-de-trabajo(1).png" alt="Desempeño Docente" class="icon">
+                        Desempeño Docente
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <img src="resources/img/menu.png" alt="Menu">
+        </div>
+        <h1>Panel Administrativo</h1>
+        <div class="user-icon">
+            <img src="resources/img/circulo-de-usuarios.png" alt="Usuario">
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="">Mi Perfil</a></li>
+                <li><a href="index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="selected-option">
+        Acceso Rápido
+    </div>
+
+    <div class="main-content">
+        <div class="card">
+            <div class="card-icon">
+                <img src="resources/img/libros(1).png" alt="Materias">
+            </div>
+            <div class="card-number">11</div>
+            <div class="card-title">Materias</div>
+            <button class="card-button">Editar</button>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="resources/img/sombrero-de-graduacion.png" alt="Estudiantes">
+            </div>
+            <div class="card-number">330</div>
+            <div class="card-title">Estudiantes</div>
+            <button class="card-button">Editar</button>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="resources/img/profesor-en-la-pizarra.png" alt="Docentes">
+            </div>
+            <div class="card-number">12</div>
+            <div class="card-title">Docentes</div>
+            <button class="card-button">Editar</button>
+        </div>
+    </div>
+    
+    <script src="scriptsadmin.js"></script>
+</body>
+</html>

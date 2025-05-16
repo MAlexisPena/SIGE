@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../userEstudiante/cssEst/globalDesign.css" />
+    <link rel="stylesheet" href="../userEstudiante/cssEst/styleBoletinPeriodo2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+        <img src="../resources/img/menu.png" alt="Menu">
+      </div>
+      <h1>Panel Estudiantil</h1>
+      <div class="user-icon">
+        <img src="../resources/img/circulo-de-usuarios.png" alt="Usuario">
+      </div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="estPantallaMiPerfil.html">Mi Perfil</a></li>
+          <li><a href="../global/html/index.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="subheader">
+      <div class="selected-option">
+      Boletín Periodo 2
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../resources/img/logoIETN.png" alt="Logo">
+        <h2>I. E. Tecnico Nacionalizado</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="estPantallaPrincipal.html">
+              <img src="../resources/img/iconAccesoRapidoWhite.png" alt="Inicio" class="icon">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="estMisMaterias/estPantallaMisMaterias.html">
+              <img src="../resources/img/iconMateria.png" alt="Mis Materias" class="icon">
+              Mis Materias
+            </a>
+          </li>
+          <li class="active">
+            <a>
+              <img src="../resources/img/iconBoletines.png" alt="Mis Boletines" class="icon">
+              Mis Boletines
+            </a>
+          </li>
+          <li>
+            <a href="estPantallaMiPerfil.html">
+              <img src="../resources/img/perfil.png" alt="Mi Perfil" class="icon">
+              Mi Perfil
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+  <div class="boletin-card">
+    <div class="boletin-header">
+      <div>
+        <span class="boletin-label">Nombre del estudiante:</span>
+        <span class="boletin-value">Ana Sofía Torres García</span>
+      </div>
+      <div>
+        <span class="boletin-label">Director de curso:</span>
+        <span class="boletin-value">Aurora Sapiencia López</span>
+      </div>
+      <div>
+        <span class="boletin-label">Curso</span>
+        <span class="boletin-value">Noveno B</span>
+      </div>
+    </div>
+    <table class="boletin-table">
+      <thead>
+        <tr>
+          <th>Nombre de la materia</th>
+          <th>I</th>
+          <th>II</th>
+          <th>III</th>
+          <th>IV</th>
+          <th>Promedio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Matematicas</td><td>4.9</td><td>3.6</td><td>-</td><td>-</td><td>4.2</td></tr>
+        <tr><td>Español</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Ciencias Políticas</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Ingles</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Biología</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Ética</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Religión</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Informática</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Ed. Física</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Física</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+        <tr><td>Química</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.7</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <a href="estPantallaMisBoletines.html" class="btn-volver">
+    &#8592; Volver a&nbsp;<b>Mis Boletines</b>
+  </a>
+</div>
+</body>
+</html>

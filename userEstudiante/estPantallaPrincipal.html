@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Pantalla Principal - Estudiante</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="../userEstudiante/cssEst/globalDesign.css" />
+  <link rel="stylesheet" href="../userEstudiante/cssEst/stylePantallaPrincipal.css">
+</head>
+<body>
+  <header class="header">
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+      <img src="../resources/img/menu.png" alt="Menu">
+    </div>
+    <h1>Panel Estudiantil</h1>
+    <div class="user-icon">
+      <img src="../resources/img/circulo-de-usuarios.png" alt="Usuario">
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+      <ul>
+        <li><a href="estPantallaMiPerfil.html">Mi Perfil</a></li>
+        <li><a href="../global/html/index.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="subheader">
+      <div class="selected-option">
+      Inicio
+      </div>
+    </div>
+
+  <div class="sidebar">
+    <div class="logo">
+      <img src="../resources/img/logoIETN.png" alt="Logo">
+      <h2>I. E. Tecnico Nacionalizado</h2>
+    </div>
+    <nav>
+      <ul>
+        <li class="active">
+          <a>
+            <img src="../resources/img/iconAccesoRapidoWhite.png" alt="Inicio" class="icon">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="../userEstudiante/estMisMaterias/estPantallaMisMaterias.html">
+            <img src="../resources/img/iconMateria.png" alt="Mis Materias" class="icon">
+            Mis Materias
+          </a>
+        </li>
+        <li>
+          <a href="estPantallaMisBoletines.html">
+            <img src="../resources/img/iconBoletines.png" alt="Mis Boletines" class="icon">
+            Mis Boletines
+          </a>
+        </li>
+        <li>
+          <a href="estPantallaMiPerfil.html">
+            <img src="../resources/img/perfil.png" alt="Mi Perfil" class="icon">
+            Mi Perfil
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <section class="bienvenida">
+      <h2>¡Bienvenida!</h2>
+      <p class="nombre">Ana Sofía Torres García</p>
+    </section>
+
+    <div class="contenedor-resumen">
+      <section class="resumen-academico">
+        <h3>Resumen Académico</h3>
+        <p><strong>Grado:</strong> Noveno B</p>
+        <p><strong>Periodo Actual:</strong> II</p>
+        <p><strong>Promedio General:</strong> 4.6</p>
+      </section>
+
+      <section class="notas">
+        <h3>Notas por Materia</h3>
+        <div class="materias">
+          <div class="materia">
+            <div class="barra-nota" style="height: 80%;"></div>
+            <span>Mat</span>
+          </div>
+          <div class="materia">
+            <span>Esp</span>
+            <div class="barra-nota" style="height: 70%;"></div>
+          </div>
+          <div class="materia">
+            <span>Bio</span>
+            <div class="barra-nota" style="height: 90%;"></div>
+          </div>
+          <div class="materia">
+            <span>Inf</span>
+            <div class="barra-nota" style="height: 85%;"></div>
+          </div>
+          <div class="materia">
+            <span>Éti</span>
+            <div class="barra-nota" style="height: 75%;"></div>
+          </div>
+        </div>
+        <p class="escala">Escala 0.0 – 5.0</p>
+      </section>
+    </div>
+  </div>
+    
+  
+  </div>
+  <script src="../scriptsadmin.js"></script>
+</body>
+</html>

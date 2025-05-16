@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="../cssEst/globalDesign.css" />
+    <link rel="stylesheet" href="../cssEst/stylePantallaMisMaterias.css">
+  </head>
+  <body>
+    <header class="header">
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+      <img src="../../resources/img/menu.png" alt="Menu">
+    </div>
+    <h1>Panel Estudiantil</h1>
+    <div class="user-icon">
+      <img src="../../resources/img/circulo-de-usuarios.png" alt="Usuario">
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+      <ul>
+        <li><a href="../estPantallaMiPerfil.html">Mi Perfil</a></li>
+        <li><a href="../../global/html/index.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <div class="subheader">
+      <div class="selected-option">
+      Mis Materias
+      </div>
+    </div>
+
+  <div class="sidebar">
+    <div class="logo">
+      <img src="../../resources/img/logoIETN.png" alt="Logo">
+      <h2>I. E. Tecnico Nacionalizado</h2>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="../estPantallaPrincipal.html">
+            <img src="../../resources/img/iconAccesoRapidoWhite.png" alt="Inicio" class="icon">
+            Inicio
+          </a>
+        </li>
+        <li class="active">
+          <a>
+            <img src="../../resources/img/iconMateria.png" alt="Mis Materias" class="icon">
+            Mis Materias
+          </a>
+        </li>
+        <li>
+          <a href="../estPantallaMisBoletines.html">
+            <img src="../../resources/img/iconBoletines.png" alt="Mis Boletines" class="icon">
+            Mis Boletines
+          </a>
+        </li>
+        <li>
+          <a href="../estPantallaMiPerfil.html">
+            <img src="../../resources/img/perfil.png" alt="Mi Perfil" class="icon">
+            Mi Perfil
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-content">
+  <section class="tabla-materias">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre de la Materia</th>
+          <th>Docente</th>
+          <th>Calificaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Matemáticas</td>
+          <td>Fernando Agudelo</td>
+          <td>
+            <a href="estPantallaCalificaciones.html">
+              <button class="btn-ver">Ver</button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Español</td>
+          <td>Anselmo Hernández</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ciencias Políticas</td>
+          <td>Baldomero Martínez</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Inglés</td>
+          <td>Dario Ramírez</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Biología</td>
+          <td>Fabiola Jiménez</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Ética</td>
+          <td>Humberto Vargas</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Religión</td>
+          <td>Eloy Rodríguez</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Informática</td>
+          <td>Aurora López</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Ed. Física</td>
+          <td>Celeste Pérez</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Física</td>
+          <td>Esteban González</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Química</td>
+          <td>Graciela Torres</td>
+          <td><button class="btn-ver">Ver</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+  </div>
+  <script src="../../scriptsadmin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../userEstudiante/cssEst/globalDesign.css" />
+    <link rel="stylesheet" href="../userEstudiante/cssEst/stylePantallaMisBoletines.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+        <img src="../resources/img/menu.png" alt="Menu">
+      </div>
+      <h1>Panel Estudiantil</h1>
+      <div class="user-icon">
+        <img src="../resources/img/circulo-de-usuarios.png" alt="Usuario">
+      </div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="estPantallaMiPerfil.html">Mi Perfil</a></li>
+          <li><a href="../global/html/index.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="subheader">
+      <div class="selected-option">
+      Mis Boletines
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../resources/img/logoIETN.png" alt="Logo">
+        <h2>I. E. Tecnico Nacionalizado</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="estPantallaPrincipal.html">
+              <img src="../resources/img/iconAccesoRapidoWhite.png" alt="Inicio" class="icon">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="estMisMaterias/estPantallaMisMaterias.html">
+              <img src="../resources/img/iconMateria.png" alt="Mis Materias" class="icon">
+              Mis Materias
+            </a>
+          </li>
+          <li class="active">
+            <a>
+              <img src="../resources/img/iconBoletines.png" alt="Mis Boletines" class="icon">
+              Mis Boletines
+            </a>
+          </li>
+          <li>
+            <a href="estPantallaMiPerfil.html">
+              <img src="../resources/img/perfil.png" alt="Mi Perfil" class="icon">
+              Mi Perfil
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="boletines-grid">
+        <!-- Boletín 1 -->
+        <div class="boletin-card">
+          <div class="boletin-img" style="background-image: url('../resources/img/iconBoletin.png');"></div>
+          <div class="boletin-info">
+            <div class="boletin-titulo">Boletín 1</div>
+            <a href="../userEstudiante/estBoletinPeriodo1.html"><button class="btn-ver">Ver</button></a>
+          </div>
+        </div>
+        <!-- Boletín 2 -->
+        <div class="boletin-card">
+          <div class="boletin-img" style="background-image: url('../resources/img/iconBoletin.png');"></div>
+          <div class="boletin-info">
+            <div class="boletin-titulo">Boletín 2</div>
+            <a href="../userEstudiante/estBoletinPeriodo2.html"><button class="btn-ver">Ver</button></a>
+          </div>
+        </div>
+        <!-- Boletín 3 -->
+        <div class="boletin-card">
+          <div class="boletin-img" style="background-image: url('../resources/img/iconBoletin.png');"></div>
+          <div class="boletin-info">
+            <div class="boletin-titulo">Boletín 3</div>
+            <div class="no-disponible">No Disponible</div>
+          </div>
+        </div>
+        <!-- Boletín 4 -->
+        <div class="boletin-card">
+          <div class="boletin-img" style="background-image: url('../resources/img/iconBoletin.png');"></div>
+          <div class="boletin-info">
+            <div class="boletin-titulo">Boletín 4</div>
+            <div class="no-disponible">No Disponible</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../scriptsadmin.js"></script>
+  </body>
+</html>

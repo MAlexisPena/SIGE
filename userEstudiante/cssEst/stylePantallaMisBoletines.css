@@ -1,0 +1,86 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.boletines-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 260px);
+  grid-template-rows: repeat(2, 260px);
+  gap: 40px 60px;
+}
+
+.boletin-card {
+  background: #e3efee;
+  border-radius: 28px;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  position: relative;
+}
+
+.boletin-img {
+  width: 100%;
+  height: 110px;
+  background-color: #d7e3e2;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boletin-info {
+  background: #f9e3c1;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.boletin-titulo {
+  font-size: 22px;
+  color: #222;
+  font-weight: 400;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.btn-ver {
+  background: #d7eaff;
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 28px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+
+.btn-ver:hover {
+  background: #b6d6f2;
+}
+
+.no-disponible {
+  color: #ff2222;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align: center;
+}

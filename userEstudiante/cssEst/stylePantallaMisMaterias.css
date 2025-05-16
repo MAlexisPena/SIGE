@@ -1,0 +1,66 @@
+/* Estilo para la tabla */
+.tabla-materias table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de la tabla */
+.tabla-materias thead {
+    background-color: #f9d8a6;
+}
+
+.tabla-materias th {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Filas de la tabla */
+.tabla-materias tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-materias td {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/*Centrar la columna "#" */
+.tabla-materias td:first-child, /* Primera columna */
+.tabla-materias th:first-child { /* Encabezado de la primera columna */
+    text-align: center;
+}
+
+/*Centrar los botones de la columna "Calificacoines" */
+.tabla-materias td:last-child, /* Última columna */
+.tabla-materias th:last-child { /* Encabezado de la última columna */
+    text-align: center;
+}
+
+/* Última fila sin borde */
+.tabla-materias tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Botón "Ver" */
+.btn-ver {
+    background-color: #d7eaff;
+    color: #007bff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver:hover {
+    background-color: #c4dbff;
+}

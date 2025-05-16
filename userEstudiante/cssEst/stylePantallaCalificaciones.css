@@ -1,0 +1,79 @@
+/* Estilo para cada periodo */
+.periodo {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Título del periodo */
+.periodo h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f9d8a6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Estilo para la tabla */
+.periodo table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.periodo thead {
+  background-color: #f9d8a6;
+}
+
+.periodo th {
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.periodo tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.periodo td {
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Última fila sin borde */
+.periodo tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Promedio del periodo */
+.promedio {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e9e9f9;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.promedio span {
+  color: #555;
+}
+
+/* Enlace en observaciones */
+.periodo a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.periodo a:hover {
+  text-decoration: underline;
+}

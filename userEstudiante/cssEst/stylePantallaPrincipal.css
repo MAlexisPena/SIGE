@@ -1,0 +1,94 @@
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+  text-align: center;
+}
+
+.bienvenida h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bienvenida .nombre {
+  font-size: 18px;
+  font-weight: bold;
+  color: #070716;
+  background-color: #F5E7FA;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Contenedor de resumen y notas */
+.contenedor-resumen {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Tarjetas de resumen académico y notas */
+.resumen-academico,
+.notas {
+  background-color: #FBFBFB;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  flex: 1;
+}
+
+.resumen-academico h3, .notas h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #885E1A;
+    margin-bottom: 10px;
+}
+
+.resumen-academico p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #070716;
+}
+
+/* Notas por materia */
+.materias {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.materia {
+  text-align: center;
+  flex: 1;
+}
+
+.materia span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.barra-nota {
+  width: 50px;
+  background-color: #F5DCB2;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.escala {
+  text-align: center;
+  font-size: 14px;
+  color: #070716;
+}
