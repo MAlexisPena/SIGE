@@ -1,0 +1,149 @@
+/* Puedes agregar esto a tu archivo de estilos correspondiente */
+.main-content {
+  margin-top: 150px;
+  margin-left: 320px; /* ancho del sidebar */
+  padding: 20px 0 40px 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafbfc;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+}
+
+.boletin-encabezado {
+  display: flex;
+  align-items: center;
+  background: #0a0a18;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  padding: 18px 36px 18px 24px;
+  width: 98%;
+  max-width: 900px;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.boletin-periodo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.periodo-label {
+  background: #ededed;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 16px 16px 0 0;
+  padding: 6px 28px 2px 28px;
+  text-align: center;
+}
+
+.periodo-anio {
+  background: #ededed;
+  color: #222;
+  font-size: 16px;
+  border-radius: 0 0 16px 16px;
+  padding: 2px 28px 6px 28px;
+  text-align: center;
+}
+
+.boletin-titulo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  flex: 1;
+}
+
+.boletin-escudo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.boletin-subtitulo {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.boletin-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 28px 28px 18px 28px;
+  max-width: 900px;
+  width: 98%;
+}
+
+.boletin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 18px;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.boletin-label {
+  color: #888;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.boletin-value {
+  color: #222;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  border-bottom: 1.5px solid #888;
+  padding-bottom: 2px;
+}
+
+.boletin-header > div {
+  min-width: 220px;
+  flex: 1;
+}
+
+.boletin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.boletin-table th, .boletin-table td {
+  text-align: left;
+  padding: 7px 10px;
+  font-size: 16px;
+}
+
+.boletin-table th {
+  color: #888;
+  font-weight: 500;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.boletin-table td {
+  color: #222;
+  font-weight: 400;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.boletin-table th:not(:first-child), .boletin-table td:not(:first-child) {
+  text-align: center;
+}
+
+.boletin-table tr:last-child td {
+  border-bottom: none;
+}

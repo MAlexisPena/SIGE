@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../userAdministrador/css/styleGlobal.css">
+    <link rel="stylesheet" href="../userAdministrador/css/styleBoletinEstudiante.css">
+    <title>Boletin Estudiante</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <img src="../resources/img/menu.png" alt="Menu">
+        </div>
+        <h1>Panel Administrativo</h1>
+        <div class="user-icon">
+            <img src="../resources/img/circulo-de-usuarios.png" alt="Usuario">
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="#">Mi Perfil</a></li>
+                <li><a href="../global/html/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="selected-option">
+        Boletin Estudiante
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../resources/img/logoIETN.png" alt="Logo">
+            <h2>I. E. Tecnico Nacionalizado</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="accesoRapido.html">
+                        <img src="../resources/img/iconAccesoRapidoWhite.png" alt="Acceso Rapido" class="icon">
+                        Acceso Rápido
+                    </a>
+                </li>
+                <li>
+                    <a href="adminGestionUsuario.html">
+                        <img src="../resources/img/iconGestionUsuarioWhite.png" alt="Gestión de Usuarios" class="icon">
+                        Gestión de Usuarios
+                    </a>
+                </li>
+                <li>
+                    <a href="gestionAcademica.html">
+                        <img src="../resources/img/desarrollo-educativo(1).png" alt="Gestión Academica" class="icon">
+                        Gestión Academica
+                    </a>
+                </li>
+                <li class="active">
+                    <a>
+                        <img src="../resources/img/iconGenerarBoletines.png" alt="Generar Boletines" class="icon">
+                        Generar Boletines
+                    </a>
+                </li>
+                <li>
+                    <a href="desempeñoEstudiantil.html">
+                        <img src="../resources/img/productividad(1).png" alt="Desempeño Estudiantil" class="icon">
+                        Desempeño Estudiantil
+                    </a>
+                </li>
+                <li>
+                    <a href="desempeñoDocente.html">
+                        <img src="../resources/img/horario-de-trabajo(1).png" alt="Desempeño Docente" class="icon">
+                        Desempeño Docente
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="boletin-encabezado">
+            <div class="boletin-periodo">
+                <div class="periodo-label">PERIODO II</div>
+                <div class="periodo-anio">2025</div>
+            </div>
+            <div class="boletin-titulo">
+                <div>INTITUCION EDUCATIVA TECNICO<br>NACIONALIZADO DE PAUNA</div>
+            </div>
+            <div class="boletin-escudo">
+                <img src="../resources/img/logoIETN.png" alt="Escudo" />
+            </div>
+        </div>
+        <div class="boletin-subtitulo">BOLETÍN DE CALIFICACIONES</div>
+        <div class="boletin-card">
+            <div class="boletin-header">
+                <div>
+                    <span class="boletin-label">Nombre del estudiante:</span>
+                    <span class="boletin-value">Pepito Hemirio Pérez Ávila</span>
+                </div>
+                <div>
+                    <span class="boletin-label">Director de curso:</span>
+                    <span class="boletin-value">Aurora Sapiencia López</span>
+                </div>
+                <div>
+                    <span class="boletin-label">Curso</span>
+                    <span class="boletin-value">Noveno B</span>
+                </div>
+            </div>
+            <table class="boletin-table">
+                <thead>
+                    <tr>
+                        <th>Nombre de la materia</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>IV</th>
+                        <th>Promedio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Matematicas</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Español</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Ciencias Políticas</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Ingles</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Biología</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Ética</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Religión</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Informática</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Ed. Física</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Física</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                    <tr><td>Química</td><td>5.0</td><td>4.5</td><td>-</td><td>-</td><td>4.5</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

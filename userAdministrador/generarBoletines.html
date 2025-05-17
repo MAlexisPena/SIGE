@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../userAdministrador/css/styleGlobal.css">
+    <link rel="stylesheet" href="../userAdministrador/css/styleGenerarBoletines.css">
+    <title>Genrar Boletines</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <img src="../resources/img/menu.png" alt="Menu">
+        </div>
+        <h1>Panel Administrativo</h1>
+        <div class="user-icon">
+            <img src="../resources/img/circulo-de-usuarios.png" alt="Usuario">
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="#">Mi Perfil</a></li>
+                <li><a href="../global/html/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="selected-option">
+        Generar Boletines
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../resources/img/logoIETN.png" alt="Logo">
+            <h2>I. E. Tecnico Nacionalizado</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="accesoRapido.html">
+                        <img src="../resources/img/iconAccesoRapidoWhite.png" alt="Acceso Rapido" class="icon">
+                        Acceso Rápido
+                    </a>
+                </li>
+                <li>
+                    <a href="adminGestionUsuario.html">
+                        <img src="../resources/img/iconGestionUsuarioWhite.png" alt="Gestión de Usuarios" class="icon">
+                        Gestión de Usuarios
+                    </a>
+                </li>
+                <li>
+                    <a href="gestionAcademica.html">
+                        <img src="../resources/img/desarrollo-educativo(1).png" alt="Gestión Academica" class="icon">
+                        Gestión Academica
+                    </a>
+                </li>
+                <li class="active">
+                    <a>
+                        <img src="../resources/img/iconGenerarBoletines.png" alt="Generar Boletines" class="icon">
+                        Generar Boletines
+                    </a>
+                </li>
+                <li>
+                    <a href="desempeñoEstudiantil.html">
+                        <img src="../resources/img/productividad(1).png" alt="Desempeño Estudiantil" class="icon">
+                        Desempeño Estudiantil
+                    </a>
+                </li>
+                <li>
+                    <a href="desempeñoDocente.html">
+                        <img src="../resources/img/horario-de-trabajo(1).png" alt="Desempeño Docente" class="icon">
+                        Desempeño Docente
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <form class="boletin-busqueda-form" id="form-busqueda-estudiante">
+            <label class="boletin-label">Ingreso de datos del estudiante</label>
+            <div class="boletin-busqueda-bar">
+                <span class="boletin-bar-label">ID Estudiante</span>
+                <input type="text" class="boletin-input id" value="1194573656" readonly>
+                <span class="boletin-bar-label">Nombre</span>
+                <input type="text" class="boletin-input nombre" value="Pepito Hemirio Pérez Ávila" readonly>
+                <button type="submit" class="boletin-btn">Buscar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('form-busqueda-estudiante').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'boletinEstudiante.html';
+        });
+    </script>
+</body>
+</html>

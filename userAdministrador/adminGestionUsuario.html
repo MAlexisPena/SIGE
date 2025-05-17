@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGE/Administrador</title>
+    <link rel="stylesheet" href="../userAdministrador/css/styleGlobal.css">
+    <link rel="stylesheet" href="../userAdministrador/css/styleGestionUsuario.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../resources/img/logoIETN.png" alt="Logo">
+            <h2>I. E. Tecnico Nacionalizado</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="accesoRapido.html">
+                        <img src="../resources/img/iconAccesoRapidoWhite.png" alt="Acceso Rapido" class="icon">
+                        Acceso Rápido
+                    </a>
+                </li>
+                <li class="active">
+                    <a>
+                        <img src="../resources/img/iconGestionUsuarioWhite.png" alt="Gestión de Usuarios" class="icon">
+                        Gestión de Usuarios
+                    </a>
+                </li>
+                <li>
+                    <a href="gestionAcademica.html">
+                        <img src="../resources/img/desarrollo-educativo(1).png" alt="Gestión Academica" class="icon">
+                        Gestión Academica
+                    </a>
+                </li>
+                <li>
+                    <a href="generarBoletines.html">
+                        <img src="../resources/img/iconGenerarBoletines.png" alt="Generar Boletines" class="icon">
+                        Generar Boletines
+                    </a>
+                </li>
+                <li>
+                    <a href="desempeñoEstudiantil.html">
+                        <img src="../resources/img/productividad(1).png" alt="Desempeño Estudiantil" class="icon">
+                        Desempeño Estudiantil
+                    </a>
+                </li>
+                <li>
+                    <a href="desempeñoDocente.html">
+                        <img src="../resources/img/horario-de-trabajo(1).png" alt="Desempeño Docente" class="icon">
+                        Desempeño Docente
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <img src="../resources/img/menu.png" alt="Menu">
+        </div>
+        <h1>Panel Administrativo</h1>
+        <div class="user-icon">
+            <img src="../resources/img/circulo-de-usuarios.png" alt="Usuario">
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="#">Mi Perfil</a></li>
+                <li><a href="../global/html/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="selected-option">
+        Gestión de Usuarios
+    </div>
+        <div class="main-content">
+  <div class="admin-user-actions">
+    <!-- Tarjeta 1 -->
+    <div class="user-action-card">
+      <div class="user-action-icon" style="background-image: url('../resources/img/iconInscribirUsuario.png');"></div>
+      <div class="user-action-body">
+        <div class="user-action-title">Inscribir nuevo usuario</div>
+        <button class="user-action-btn">Ir</button>
+      </div>
+    </div>
+    <!-- Tarjeta 2 -->
+    <div class="user-action-card">
+      <div class="user-action-icon" style="background-image: url('../resources/img/iconEditarUsuario.png');"></div>
+      <div class="user-action-body">
+        <div class="user-action-title">Editar usuario</div>
+        <button class="user-action-btn">Ir</button>
+      </div>
+    </div>
+    <!-- Tarjeta 3 -->
+    <div class="user-action-card">
+      <div class="user-action-icon" style="background-image: url('../resources/img/iconEliminarUsuario.png');"></div>
+      <div class="user-action-body">
+        <div class="user-action-title">Eliminar usuario</div>
+        <button class="user-action-btn">Ir</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="scriptsadmin.js"></script>
+</body>
+</html>

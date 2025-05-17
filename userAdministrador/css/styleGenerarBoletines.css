@@ -1,0 +1,77 @@
+/* Puedes agregar esto a tu archivo de estilos correspondiente */
+.main-content {
+  margin-top: 100px;
+  margin-left: 320px;
+  padding: 40px 0 0 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.boletin-busqueda-form {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.boletin-label {
+  display: block;
+  color: #888;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.boletin-busqueda-bar {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 14px;
+}
+
+.boletin-bar-label {
+  color: #222;
+  font-size: 17px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.boletin-input {
+  background: #ededed;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 18px;
+  font-size: 17px;
+  color: #222;
+  font-family: inherit;
+  outline: none;
+  min-width: 120px;
+  margin-right: 10px;
+}
+
+.boletin-input.nombre {
+  min-width: 320px;
+  flex: 1;
+}
+
+.boletin-btn {
+  background: #0a0a18;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 28px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.boletin-btn:hover {
+  background: #22223b;
+}
